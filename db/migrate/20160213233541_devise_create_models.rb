@@ -1,6 +1,7 @@
 class DeviseCreateModels < ActiveRecord::Migration
   def change
     create_table(:models) do |t|
+      t.string :username, null:false, default: "Keanu Reeves"
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""

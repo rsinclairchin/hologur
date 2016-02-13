@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root 'image#index'
+  devise_for :users, controllers: { sessions: "users/sessions" }
+  resources :image
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
