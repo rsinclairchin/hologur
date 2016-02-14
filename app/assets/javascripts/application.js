@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require three.js
+//= require theta-viewer.js
 //= require_tree .
