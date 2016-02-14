@@ -1,8 +1,6 @@
 class ImageController < ApplicationController
 
   def index
-    @images = Image.all
-    erb :index
   end
 
   def show
@@ -40,6 +38,13 @@ class ImageController < ApplicationController
     @image = Image.find(params[:id])
     @image.destroy
     redirect :index
+  end
+
+  def pic
+    puts "*" * 30
+    puts "hello"
+
+    erb :pic
   end
 
 end
